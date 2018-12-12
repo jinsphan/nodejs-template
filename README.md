@@ -1,2 +1,2 @@
-# btb-game
+# nodejs-template-2018
 
