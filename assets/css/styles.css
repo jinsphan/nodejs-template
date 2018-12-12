@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.btn-transparent {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.area-connecting {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background: rgba(255, 255, 255, 0.123);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.area-connecting .loading svg {
+    font-size: 50px;
+}
+
+.bet-select-element {
+    padding: 2px 5px;
+    background-color: #292d35;
+    border-color: #292d35;
+    border: 1px solid #292d35;
+    color: #fff;
+    border-radius: 0;
+    display: inline-block;
+    cursor: pointer;
+    outline: 0;
+    font-size: 12px;
+}

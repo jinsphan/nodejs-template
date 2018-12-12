@@ -1,0 +1,4 @@
+
+- backupdata: 	sudo mongodump --db game-clone-bustabit-HN --out /var/backups/mongobackups/`date +"%m-%d-%y"`
+- restoredata: 	sudo mongorestore --db game-clone-bustabit-HN --drop /var/backups/mongobackups/`date +"%m-%d-%y"`/game-clone-bustabit-HN
+
