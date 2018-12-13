@@ -1,12 +1,13 @@
 const path = require('path');
 const __DEV__ = require('./env/development');
 const __PRO__ = require('./env/production');
+const APP_NAME = 'nodejs-ejs-socket-template';
 
 // config session
 var SESSION = {
-    APP_NAME: "app-name",
-    secret: "n-e-s-tmp" + APP_NAME,
-    jwtSecret: `jwt-sct-${APP_NAME}-game-!@##@!`,
+    APP_NAME,
+    secret: APP_NAME + 'jki33234!@@',
+    jwtSecret: `jwt-sct-${APP_NAME}-!@##@!`,
     cookie: { maxAge: 60000 }
 }
 
