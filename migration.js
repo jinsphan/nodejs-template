@@ -21,7 +21,7 @@ const getModels = () => modelsName
     .map(str => str.slice(0, -1))
     .map(modelName => mongoose.model(modelName));
 
-const cleanDB = (db) => db.remove({});
+const cleanDB = (db) => new Promise((rs, rj) => db.collection.drop().then(rs).catch(rs));
 const migrateDB = (db) => db.insertMany(db.getMigrateData ? db.getMigrateData() : []);
 
 const cleanDBs = (DBs) => Promise.all(DBs.map(cleanDB))
